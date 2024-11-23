@@ -1,4 +1,6 @@
 function App() {
+  const test = 'test';
+  
   return (
     <>
       <h1>You got this 💪</h1>
