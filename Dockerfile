@@ -16,7 +16,7 @@ COPY . .
 
 # Set the environment variable for the application's port
 # (Be sure to replace '4200' with your application's specific port number if different)
-ENV PORT 4200
+ENV PORT 8080
 
 # Install 'serve', a static file serving package globally in the container
 RUN npm install -g serve
@@ -27,4 +27,4 @@ RUN npm install
 RUN npm run build
 
 # Serve the 'build' directory on port 4200 using 'serve'
-CMD ["serve", "-s", "-l", "4200", "./build"]
+CMD ["serve", "-s", "-l", "8080", "./build"]
