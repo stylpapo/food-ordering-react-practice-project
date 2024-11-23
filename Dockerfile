@@ -12,7 +12,7 @@ COPY . .
 
 # Set the PYTHONPATH environment variable, which is occasionally necessary for certain node packages
 # 'PWD' is an environment variable that stores the path of the current working directory
-#ENV PYTHONPATH=${PYTHONPATH}:${PWD}
+ENV PYTHONPATH=${PYTHONPATH}:${PWD}
 
 # Set the environment variable for the application's port
 # (Be sure to replace '4200' with your application's specific port number if different)
