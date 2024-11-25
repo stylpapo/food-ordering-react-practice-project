@@ -1,6 +1,5 @@
 function App() {
-  const test = 'test';
-  
+  alert('Google Cloud CDN test.');
   return (
     <>
       <h1>You got this 💪</h1>
