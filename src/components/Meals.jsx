@@ -4,7 +4,7 @@ import { getMeals } from "../api";
 
 const CURRENCY = "€";
 
-export default function Meals() {
+export default function Meals({ onMealSelection }) {
     const [meals, setMeals] = useState([]);
 
     function handleSetMeals(availableMeals) {
@@ -25,6 +25,8 @@ export default function Meals() {
         fetchMeals();
     }, []);
     
+    console.log('Meals');
+
     return (
         <div id="meals">
             {!meals.length && <p>There are no available meals at the moment!</p>}
@@ -37,6 +39,7 @@ export default function Meals() {
                     currency={CURRENCY}
                     description={meal.description}
                     image={meal.image}
+                    addToCart={onMealSelection}
                 />
             ))}
       </div>
