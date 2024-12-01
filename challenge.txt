@@ -1,0 +1,8 @@
+1. add components for:
+    a. products
+    b. cart(modal)
+    c. checkout form(modal)
+2. fetch dummy meals data from the backend & show it on the screen ( GET/meals )
+3. allow users to add & remove products to/from the cart
+4. send cart data along with user data (full name, email, street, postal code, city) to the backend (POST/orders)
+5. handle loading & error states
