@@ -1,1 +1,1 @@
-export const server = process.env.API;
+export const server = "https://food-order-react-app-backend-1011034156124.europe-west1.run.app";
